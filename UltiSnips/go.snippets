@@ -1,0 +1,169 @@
+snippet log "Description" !b
+pretty.Println("### $1 ->", $1)
+endsnippet
+
+snippet ctx "Description" !b
+tx, ok := c.Value("tx").(*pop.Connection)
+if !ok {
+	return errors.WithStack(errors.New("no transaction found"))
+}
+endsnippet
+
+snippet app "Description" !b
+func App() http.Handler {
+	$1
+}
+endsnippet
+
+snippet walk "Description" !b
+err ${1::=} filepath.Walk(root, func(path string, info os.FileInfo, err error) error {
+	$2
+	return nil
+})
+endsnippet
+
+snippet tsu "Description" !b
+ts := httptest.NewServer(${1:App()})
+defer ts.Close()
+endsnippet
+
+snippet main "" i
+package main
+
+func main() {
+	$1
+}
+endsnippet
+
+snippet ins "Description" !b
+pretty.Println("### $1 ->", $1)
+endsnippet
+
+snippet inst "Description" !b
+fmt.Printf("### $1 -> %T\n", $1)
+endsnippet
+
+snippet insq "Description" !b
+pretty.Printf("### $1 -> %q\n", $1)
+endsnippet
+
+snippet init "Description" b
+func init() {
+	$1
+}
+endsnippet
+
+snippet hfunc "Description" i
+func $1(res http.ResponseWriter, req *http.Request) {
+	$2
+}
+endsnippet
+
+snippet errf "" i
+if err != nil {
+	log.Fatal(err)
+}
+endsnippet
+
+snippet errt "" i
+if err != nil {
+	t.Fatal(err)
+}
+endsnippet
+
+snippet errv "" i
+if err != nil {
+	return ${1:nil}, errors.WithStack(err)
+}
+endsnippet
+
+snippet errtf "" i
+if err != nil {
+	t.Fatalf("$1", $2)
+}
+endsnippet
+
+snippet logf "Description" i
+log.Fatal($1)
+endsnippet
+
+snippet las "Description" i
+http.ListenAndServe("${1::3000}", ${2:nil})
+endsnippet
+
+snippet timestamps "Descriptions" !b
+CreatedAt time.Time \`json:"created_at" db:"created_at"\`
+UpdatedAt time.Time \`json:"updated_at" db:"updated_at"\`
+endsnippet
+
+snippet model "Description" !b
+type $1 struct {
+	ID        int       "json:"id" db:"id""
+	CreatedAt time.Time \`json:"created_at" db:"created_at"\`
+	UpdatedAt time.Time \`json:"updated_at" db:"updated_at"\`
+}
+endsnippet
+
+snippet test "" !b
+func Test_$1(t *testing.T) {
+  ${2:r := require.New(t)}
+}
+endsnippet
+
+snippet stest "" !b
+t.Run("$1", func(st *testing.T) {
+	r := require.New(st)
+	$2
+})
+endsnippet
+
+snippet roll "" !b
+th.Rollback(func(tx *pop.Connection) {
+})
+endsnippet
+
+snippet efunc "" !b
+func $1(ctx *echo.Context) error {
+}
+endsnippet
+
+snippet bfunc "" i
+func $1(c buffalo.Context) error {
+	$2
+}
+endsnippet
+
+snippet bmid "Description" i
+func $1(next buffalo.Handler) buffalo.Handler {
+	return func(c buffalo.Context) error {
+		$2
+	}
+}
+endsnippet
+
+snippet err "" !b
+if err != nil {
+	return errors.WithStack(err)
+}
+endsnippet
+
+snippet errr "" !b
+if err := $1; err != nil {
+	return errors.WithStack(err)
+}
+endsnippet
+
+
+snippet suite "" !b
+type $1Suite struct {
+	th.Suite
+}
+
+func Test$1Suite(t *testing.T) {
+	suite.Run(t, &$1Suite{})
+}
+endsnippet
+
+snippet req "Description" i
+r := require.New(t)
+endsnippet

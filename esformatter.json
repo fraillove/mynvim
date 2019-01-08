@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    "esformatter-jsx"
+  ],
+  "quotes": {
+    "type": "double"
+  }
+}
