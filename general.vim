@@ -17,8 +17,12 @@ set backspace=indent,eol,start
 set clipboard=unnamed
 " let $PATH = "/usr/local/bin:".$PATH
 let $PATH = $PATH
+
+" 去掉搜索高亮
 :nnoremap <silent><expr> <Leader>h (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"
 
+"  多窗口移动
+"  https://stackoverflow.com/questions/6403716/shortcut-for-moving-between-vim-windows
 let i = 1
 while i <= 9
     execute 'nnoremap <Leader>' . i . ' :' . i . 'wincmd w<CR>'
@@ -33,4 +37,6 @@ set statusline=win:%{WindowNumber()}
 set inccommand=split
 
 let g:titlecase_map_keys = 0
+
+let g:python3_host_prog = '/usr/local/bin/python3'
 

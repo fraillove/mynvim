@@ -13,8 +13,11 @@ source $HOME/.config/nvim/ruby.vim
 source $HOME/.config/nvim/javascript.vim
 source $HOME/.config/nvim/css.vim
 source $HOME/.config/nvim/html.vim
-source $HOME/.config/nvim/markdown.vim
+" source $HOME/.config/nvim/markdown.vim
 source $HOME/.config/nvim/closetag.vim
 source $HOME/.config/nvim/tagbar.vim
 source $HOME/.config/nvim/tmux.vim
 source $HOME/.config/nvim/ycm.vim
+source $HOME/.config/nvim/nerdcommenter.vim
+source $HOME/.config/nvim/vim-highlightedyank.vim
+source $HOME/.config/nvim/markdown-preview.vim
