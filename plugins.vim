@@ -12,19 +12,19 @@ Plug 'honza/vim-snippets'
 
 Plug 'rking/ag.vim'
 " Plug 'mileszs/ack.vim'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'         " 快速跳转
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Plug 'junegunn/fzf.vim'
-Plug 'alvan/vim-closetag'
+Plug 'alvan/vim-closetag'         " 配对符号补全
 Plug 'Raimondi/delimitMate'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'neomake/neomake'
-Plug 'scrooloose/nerdtree'
-Plug 'majutsushi/tagbar'
+Plug 'scrooloose/nerdtree'         " 文件管理器
+Plug 'majutsushi/tagbar'           " 查看当前代码文件中的变量和函数列表的插件，可以切换和跳转到代码中对应的变量和函数的位置
 " Plug 'tomtom/tcomment_vim'
-Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdcommenter'    " 注释代码
 
-Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline'     " 状态栏美化
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 
@@ -48,7 +48,7 @@ Plug 'ngmy/vim-rubocop'
 Plug 'kana/vim-textobj-user'
 Plug 'https://github.com/whatyouhide/vim-textobj-erb'
 
-Plug 'tpope/vim-surround'
+Plug 'tpope/vim-surround'         " 快速切换括号/引号或者标签
 Plug 'janko-m/vim-test'
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Plug 'zchee/deoplete-go', { 'do': 'make'}
@@ -78,4 +78,6 @@ Plug 'tpope/vim-dadbod'
 Plug 'cespare/vim-toml'
 Plug 'godoctor/godoctor.vim', { 'do': ':GoDoctorInstall'}
 " Plug 'blueyed/vim-diminactive'
+Plug 'machakann/vim-highlightedyank'
+
 call plug#end()

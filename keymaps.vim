@@ -34,3 +34,17 @@ nnoremap gV `[v`]
 nnoremap <leader>to :tabonly<cr>
 nnoremap <leader>y :call system('nc localhost 8377', @0)<CR>
 map <space> <Plug>(easymotion-prefix)
+
+" 当前行上移下移
+nnoremap [e  :<c-u>execute 'move -1-'. v:count1<cr>
+nnoremap ]e  :<c-u>execute 'move +'. v:count1<cr>
+
+" 添加空行
+nnoremap [<space>  :<c-u>put! =repeat(nr2char(10), v:count1)<cr>'[
+nnoremap ]<space>  :<c-u>put =repeat(nr2char(10), v:count1)<cr>
+
+" 上下左右
+map! <c-b> <left>
+map! <c-f> <right>
+inoremap <c-n> <down>
+inoremap <c-p> <up>
