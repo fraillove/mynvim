@@ -28,6 +28,9 @@ Plug 'vim-airline/vim-airline'     " 状态栏美化
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 
+" markdown 预览
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+
 Plug 'Chiel92/vim-autoformat'
 Plug 'millermedeiros/vim-esformatter'
 

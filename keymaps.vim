@@ -48,3 +48,6 @@ map! <c-b> <left>
 map! <c-f> <right>
 inoremap <c-n> <down>
 inoremap <c-p> <up>
+
+" 打开 Typora
+autocmd FileType markdown map <leader>md :silent !open -a Typora.app '%:p'<cr>
