@@ -29,7 +29,7 @@ let g:mkdp_browser = ''
 
 " set to 1, echo preview page url in command line when open preview page
 " default is 0
-let g:mkdp_echo_preview_url = 0
+let g:mkdp_echo_preview_url = 1
 
 " a custom vim function name to open preview page
 " this function will receive url as param
@@ -63,5 +63,6 @@ let g:mkdp_highlight_css = '/Users/caoyuyi/Dropbox/myvim/plugged/markdown-previe
 
 " use a custom port to start server or random for empty
 let g:mkdp_port = '60000'
+
 
 

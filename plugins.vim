@@ -44,10 +44,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-markdown'
 
-Plug 'tpope/vim-rails'
-Plug 'vim-ruby/vim-ruby'
-Plug 'ngmy/vim-rubocop'
-
 Plug 'kana/vim-textobj-user'
 Plug 'https://github.com/whatyouhide/vim-textobj-erb'
 
@@ -62,16 +58,12 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --go-comp
 " Plug 'tpope/vim-rsi'
 Plug 'mklabs/split-term.vim'
 " Plug 'floobits/floobits-neovim'
-Plug 'wfleming/vim-codeclimate'
-Plug 'stefandtw/quickfix-reflector.vim'
-Plug 'jremmen/vim-ripgrep'
-Plug 'Lokaltog/vim-easymotion'
+Plug 'Lokaltog/vim-easymotion'    " 快速跳转
 Plug 'skwp/vim-html-escape'
 
 Plug 'tpope/vim-dispatch'
 Plug 'radenling/vim-dispatch-neovim'
 
-Plug 'machakann/vim-highlightedyank'
 Plug 'kien/rainbow_parentheses.vim'
 
 Plug 'dhruvasagar/vim-table-mode'
@@ -82,5 +74,8 @@ Plug 'cespare/vim-toml'
 Plug 'godoctor/godoctor.vim', { 'do': ':GoDoctorInstall'}
 " Plug 'blueyed/vim-diminactive'
 Plug 'machakann/vim-highlightedyank'
+
+Plug 'unblevable/quick-scope'
+
 
 call plug#end()

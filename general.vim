@@ -38,3 +38,5 @@ set inccommand=split
 
 let g:titlecase_map_keys = 0
 
+let g:python3_host_prog = '/usr/local/bin/python3'
+
