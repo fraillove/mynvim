@@ -40,3 +40,12 @@ let g:titlecase_map_keys = 0
 
 let g:python3_host_prog = '/usr/local/bin/python3'
 
+
+" 打字机模式
+if !exists('noalwayscenter')
+    " Calculate proper scrolloff
+    autocmd VimEnter,WinEnter,VimResized,InsertLeave * :let &scrolloff = float2nr(floor(winheight(0)/2)+1)
+    autocmd InsertEnter * :let &scrolloff = float2nr(floor(winheight(0)/2))
+    " Use <Enter> to keep center in insert mode, need proper scrolloff
+    inoremap <CR> <CR><C-o>zz
+endif
