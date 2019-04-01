@@ -20,13 +20,13 @@ Plug 'Raimondi/delimitMate'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'neomake/neomake'
 Plug 'scrooloose/nerdtree'         " 文件管理器
-Plug 'majutsushi/tagbar'           " 查看当前代码文件中的变量和函数列表的插件，可以切换和跳转到代码中对应的变量和函数的位置
+" Plug 'majutsushi/tagbar'           " 查看当前代码文件中的变量和函数列表的插件，可以切换和跳转到代码中对应的变量和函数的位置
 " Plug 'tomtom/tcomment_vim'
 Plug 'scrooloose/nerdcommenter'    " 注释代码
 
 Plug 'vim-airline/vim-airline'     " 状态栏美化
 Plug 'vim-airline/vim-airline-themes'
-Plug 'edkolev/tmuxline.vim'
+" Plug 'edkolev/tmuxline.vim'
 
 " markdown 预览
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }

@@ -59,7 +59,7 @@ let g:mkdp_preview_options = {
 let g:mkdp_markdown_css = ''
 
 " use a custom highlight style must absolute path
-let g:mkdp_highlight_css = '/Users/caoyuyi/Dropbox/myvim/plugged/markdown-preview.nvim/src/vue.css'
+let g:mkdp_highlight_css = ''
 
 " use a custom port to start server or random for empty
 let g:mkdp_port = '60000'
