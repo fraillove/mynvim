@@ -77,6 +77,8 @@ Plug 'godoctor/godoctor.vim', { 'do': ':GoDoctorInstall'}
 Plug 'machakann/vim-highlightedyank'
 
 Plug 'unblevable/quick-scope'
+" Plug 'tmhedberg/SimpylFold'
+
 
 
 call plug#end()

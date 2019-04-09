@@ -14,6 +14,10 @@ nmap <C-l> gt
 nmap nn :lnext<cr>
 nmap pp :lprevious<cr>
 
+" select all: ctrl+a
+map <C-A> ggVG
+map! <C-A> <Esc>ggVG
+
 " open files in a new tab
 nnoremap gf <C-W>gf
 vnoremap gf <C-W>gf

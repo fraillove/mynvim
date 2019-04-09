@@ -18,7 +18,7 @@ set splitbelow
 set showmatch
 hi MatchParen cterm=none ctermbg=green ctermfg=blue
 set incsearch
-set hlsearch
+set hlsearch            "高亮搜索
 set ignorecase
 set smartcase
 set wildmenu

@@ -18,6 +18,10 @@ set clipboard=unnamed
 " let $PATH = "/usr/local/bin:".$PATH
 let $PATH = $PATH
 
+" 代码折叠 za
+" set foldmethod=syntax
+" set foldlevel=100
+
 " 去掉搜索高亮
 :nnoremap <silent><expr> <Leader>h (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"
 
