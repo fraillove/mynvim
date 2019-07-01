@@ -1,5 +1,6 @@
  " source $HOME/.config/nvim/colors/molokai.vim
  source $HOME/.config/nvim/colors/gruvbox9.vim
+ " source $HOME/.config/nvim/colors/forest_night.vim
 " source $HOME/.config/nvim/colors/seattle.vim
 
 "+++ Display Settings +++
@@ -8,6 +9,7 @@ set guifont=Hack:h18
 colorscheme gruvbox9
  " colorscheme molokai
 " colorscheme seattle
+" colorscheme forest_night
 
 set listchars=tab:\.\ ,trail:·
 set list

@@ -58,8 +58,12 @@ endif
 " v$  select the current line, but not including the newline character
 set selection=exclusive
 
+let g:sneak#label = 1
+nmap f <Plug>Sneak_s
+nmap F <Plug>Sneak_S
 
-
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
 
 " tips
 "      g~ : switch the case of character

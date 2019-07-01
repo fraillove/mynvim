@@ -27,7 +27,7 @@ Plug 'scrooloose/nerdcommenter'    " 注释代码
 
 Plug 'vim-airline/vim-airline'     " 状态栏美化
 Plug 'vim-airline/vim-airline-themes'
-" Plug 'edkolev/tmuxline.vim'
+ Plug 'edkolev/tmuxline.vim'
 
 
 " markdown 预览
@@ -80,6 +80,8 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'unblevable/quick-scope'
 " Plug 'tmhedberg/SimpylFold'
 
+Plug 'justinmk/vim-sneak'
+Plug 'kshenoy/vim-signature'
 
 
 call plug#end()
