@@ -13,8 +13,12 @@ Plug 'honza/vim-snippets'
 Plug 'rking/ag.vim'
 " Plug 'mileszs/ack.vim'
 Plug 'ctrlpvim/ctrlp.vim'         " 快速跳转
+Plug 'tacahiroy/ctrlp-funky'
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Plug 'junegunn/fzf.vim'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+
 Plug 'alvan/vim-closetag'         " 配对符号补全
 Plug 'Raimondi/delimitMate'
 Plug 'mustache/vim-mustache-handlebars'
@@ -83,5 +87,8 @@ Plug 'unblevable/quick-scope'
 Plug 'justinmk/vim-sneak'
 Plug 'kshenoy/vim-signature'
 
+" Plug 'wxnacy/vim-mysql'
+
+Plug 'ervandew/supertab'
 
 call plug#end()

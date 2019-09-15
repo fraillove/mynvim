@@ -62,9 +62,32 @@ let g:sneak#label = 1
 nmap f <Plug>Sneak_s
 nmap F <Plug>Sneak_S
 
+"===============================
+" airline 配置
+"===============================
+if !exists('g:airline_symbols')
+let g:airline_symbols = {}
+endif
+let g:airline_left_sep       = '▶'
+let g:airline_left_alt_sep   = '❯'
+let g:airline_right_sep      = '◀'
+let g:airline_right_alt_sep  = '❮'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
 " tips
 "      g~ : switch the case of character
 "
+
+
+"===============================
+" supertab 配置
+" https://github.com/ervandew/supertab
+"===============================
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
+
+
+
