@@ -5,6 +5,7 @@ source $HOME/.config/nvim/spelling.vim
 source $HOME/.config/nvim/keymaps.vim
 source $HOME/.config/nvim/nerdtree.vim
 source $HOME/.config/nvim/ctrlp.vim
+source $HOME/.config/nvim/fzf.vim
 source $HOME/.config/nvim/ultisnips.vim
 source $HOME/.config/nvim/go.vim
 source $HOME/.config/nvim/git.vim
@@ -21,3 +22,4 @@ source $HOME/.config/nvim/ycm.vim
 source $HOME/.config/nvim/nerdcommenter.vim
 source $HOME/.config/nvim/vim-highlightedyank.vim
 source $HOME/.config/nvim/markdown-preview.vim
+

@@ -47,13 +47,6 @@ let g:ctrlp_open_new_file = 'et'
 
 map <leader>p :ClearCtrlPCache<cr>:CtrlP<enter>
 
-map <leader>p :FZF<enter>
-" nmap ' :Buffers<enter>
-map <leader>p :call fzf#run({'sink': 'tabedit'})<cr>
-let g:fzf_layout = { 'up': '~50%' }
-let g:fzf_buffers_jump = 1
-let $FZF_DEFAULT_COMMAND = 'rg --files'
-
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
   \   'rg --column --line-number --no-heading --color=always '.shellescape(<q-args>), 1,

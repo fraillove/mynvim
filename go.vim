@@ -34,7 +34,9 @@ au FileType go nmap <Leader>e <Plug>(go-rename)
 set updatetime=100
 " let g:go_auto_type_info = 1
 let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
 let g:go_highlight_methods = 1
+let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_interfaces = 1
